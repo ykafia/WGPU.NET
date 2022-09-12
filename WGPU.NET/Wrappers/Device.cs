@@ -298,7 +298,7 @@ namespace WGPU.NET
             );
         }
 
-        public ShaderModule CreateSprivShaderModule(string label, byte[] spirvCode)
+        public ShaderModule CreateSpirvShaderModule(string label, byte[] spirvCode)
         {
             return new ShaderModule(
                 DeviceCreateShaderModule(Impl, new ShaderModuleDescriptor
