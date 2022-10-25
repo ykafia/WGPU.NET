@@ -125,6 +125,10 @@ namespace WGPU.NET
 
             return new Buffer(DeviceCreateBuffer(Impl, desc), desc);
         }
+        public Buffer CreateBuffer(Wgpu.BufferDescriptor desc)
+        {
+            return new Buffer(DeviceCreateBuffer(Impl, desc), desc);
+        }
 
         public CommandEncoder CreateCommandEncoder(string label)
         {
