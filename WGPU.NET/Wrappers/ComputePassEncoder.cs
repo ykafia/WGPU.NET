@@ -20,10 +20,10 @@ namespace WGPU.NET
             => ComputePassEncoderBeginPipelineStatisticsQuery(Impl, querySet.Impl, queryIndex);
 
         public void Dispatch(uint workgroupCountX, uint workgroupCountY, uint workgroupCountZ)
-            => ComputePassEncoderDispatch(Impl, workgroupCountX, workgroupCountY, workgroupCountZ);
+            => ComputePassEncoderDispatchWorkgroups(Impl, workgroupCountX, workgroupCountY, workgroupCountZ);
 
         public void DispatchIndirect(Buffer indirectBuffer, ulong indirectOffset)
-            => ComputePassEncoderDispatchIndirect(Impl, indirectBuffer.Impl, indirectOffset);
+            => ComputePassEncoderDispatchWorkgroupsIndirect(Impl, indirectBuffer.Impl, indirectOffset);
 
         public void End() => ComputePassEncoderEnd(Impl);
 
