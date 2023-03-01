@@ -60,10 +60,7 @@ namespace WGPU.NET
                 arrayLayerCount = arrayLayerCount,
                 aspect = aspect
             }));
-        
-        public TextureView CreateTextureView(Wgpu.TextureViewDescriptor descriptor) =>
-            TextureView.For(TextureCreateView(Impl, descriptor));
-        
+
         /// <summary>
         /// Destroys the GPU Resource associated with this <see cref="Texture"/>
         /// </summary>

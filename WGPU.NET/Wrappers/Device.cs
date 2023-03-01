@@ -125,10 +125,6 @@ namespace WGPU.NET
 
             return new Buffer(DeviceCreateBuffer(Impl, desc), desc);
         }
-        public Buffer CreateBuffer(Wgpu.BufferDescriptor desc)
-        {
-            return new Buffer(DeviceCreateBuffer(Impl, desc), desc);
-        }
 
         public CommandEncoder CreateCommandEncoder(string label)
         {
@@ -302,7 +298,7 @@ namespace WGPU.NET
             );
         }
 
-        public ShaderModule CreateSpirvShaderModule(string label, byte[] spirvCode)
+        public ShaderModule CreateSprivShaderModule(string label, byte[] spirvCode)
         {
             return new ShaderModule(
                 DeviceCreateShaderModule(Impl, new ShaderModuleDescriptor
