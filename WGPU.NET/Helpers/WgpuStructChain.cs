@@ -145,6 +145,8 @@ namespace WGPU.NET
 			AddStruct(new Wgpu.DeviceExtras()
 			{
 				chain = new Wgpu.ChainedStruct { sType = (Wgpu.SType)Wgpu.NativeSType.STypeDeviceExtras },
+				nativeFeatures = nativeFeatures,
+				label = label, 
 				tracePath = tracePath
 			});
 
